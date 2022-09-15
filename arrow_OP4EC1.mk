@@ -20,7 +20,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
 # Inherit some common ArrowOS stuff
 $(call inherit-product, vendor/arrow/config/common.mk)
-ARROW_GAPPS := true
+#ARROW_GAPPS := true
 TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_INCLUDE_PIXEL_CHARGER := true
 
@@ -28,21 +28,17 @@ TARGET_INCLUDE_PIXEL_CHARGER := true
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := arrow_bitra
-PRODUCT_DEVICE := bitra
-PRODUCT_BRAND := realme
-PRODUCT_MODEL := RMX3370
-PRODUCT_MANUFACTURER := realme
-
-PRODUCT_SYSTEM_NAME := RMX3370
-PRODUCT_SYSTEM_DEVICE := RE879AL1
+PRODUCT_NAME := arrow_OP4EC1
+PRODUCT_DEVICE := OP4EC1
+PRODUCT_BRAND := OPPO
+PRODUCT_MODEL := PENM00
+PRODUCT_MANUFACTURER := OPPO
 
 PRODUCT_GMS_CLIENTID_BASE := android-oppo
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRIVATE_BUILD_DESC="RMX3370-user 12 RKQ1.211103.002 R.202207052143 release-keys" \
-    TARGET_DEVICE=$(PRODUCT_SYSTEM_DEVICE) \
-    TARGET_PRODUCT=$(PRODUCT_SYSTEM_NAME)
+    TARGET_DEVICE="oppo Reno6 Pro+ 5G" \
+    TARGET_PROD="oppo Reno6 Pro+ 5G" \
+    PRIVATE_BUILD_DESC="oppo Reno6 Pro+ 5G-user 12 SKQ1.211019.001/1657599207396:user/release-keys"
 
-BUILD_FINGERPRINT := realme/RMX3370/RE879AL1:12/RKQ1.211103.002/R.202207052143:user/release-keys
-PRODUCT_OVERRIDE_GMS_FINGERPRINT := google/coral/coral:13/TP1A.220624.014/8819323:user/release-keys
+BUILD_FINGERPRINT := OPPO/PENM00/OP4EC1:12/RKQ1.211103.002/R.202207151047:user/release-keys
