@@ -24,7 +24,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 $(call inherit-product, frameworks/native/build/phone-xhdpi-6144-dalvik-heap.mk)
 
 # Inherit proprietary libraries
-$(call inherit-product, vendor/oppo/OP4A7A/OP4A7A-vendor.mk)
+$(call inherit-product, vendor/oppo/OP4EC1/OP4EC1-vendor.mk)
 
 # Properties
 TARGET_ODM_PROP += $(DEVICE_PATH)/odm.prop
@@ -96,8 +96,8 @@ PRODUCT_COPY_FILES += \
 PRODUCT_SHIPPING_API_LEVEL := 29
 
 # Bootanimation
-TARGET_SCREEN_WIDTH := 1440
-TARGET_SCREEN_HEIGHT := 3168
+TARGET_SCREEN_WIDTH := 1080
+TARGET_SCREEN_HEIGHT := 2400
 
 # AID/fs configs
 PRODUCT_PACKAGES += \
@@ -211,8 +211,8 @@ PRODUCT_PACKAGES += \
 
 # Fingerprint
 PRODUCT_PACKAGES += \
-    android.hardware.biometrics.fingerprint@2.1-service.oppo_OP4A7A \
-    vendor.lineage.biometrics.fingerprint.inscreen@1.0-service.oppo_OP4A7A
+    android.hardware.biometrics.fingerprint@2.1-service.oppo_OP4EC1 \
+    vendor.lineage.biometrics.fingerprint.inscreen@1.0-service.oppo_OP4EC1
 
 PRODUCT_PACKAGES += \
     IFAAService \
@@ -272,11 +272,11 @@ PRODUCT_COPY_FILES += \
 
 # Light
 PRODUCT_PACKAGES += \
-    android.hardware.light-service.oppo_OP4A7A
+    android.hardware.light-service.oppo_OP4EC1
 
 # LiveDisplay
 PRODUCT_PACKAGES += \
-    vendor.lineage.livedisplay@2.1-service.oppo_OP4A7A
+    vendor.lineage.livedisplay@2.1-service.oppo_OP4EC1
 
 # Media
 PRODUCT_COPY_FILES += \
@@ -322,7 +322,7 @@ PRODUCT_PACKAGES += \
 
 # Namespaces
 PRODUCT_SOONG_NAMESPACES += \
-    device/oppo/OP4A7A
+    device/oppo/OP4EC1
 
 # Native Public Libraries
 PRODUCT_COPY_FILES += \
@@ -427,7 +427,7 @@ PRODUCT_PACKAGES += \
 
 # Touch
 PRODUCT_PACKAGES += \
-    vendor.lineage.touch@1.0-service.oppo_OP4A7A
+    vendor.lineage.touch@1.0-service.oppo_OP4EC1
 
 # USB
 PRODUCT_PACKAGES += \
@@ -446,7 +446,7 @@ PRODUCT_PACKAGES += \
 
 # Vibrator
 PRODUCT_PACKAGES += \
-    vendor.qti.hardware.vibrator.service.oppo_OP4A7A
+    vendor.qti.hardware.vibrator.service.oppo_OP4EC1
 
 PRODUCT_COPY_FILES += \
     vendor/qcom/opensource/vibrator/excluded-input-devices.xml:$(TARGET_COPY_OUT_VENDOR)/etc/excluded-input-devices.xml

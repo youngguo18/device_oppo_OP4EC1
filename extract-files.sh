@@ -17,7 +17,7 @@
 
 set -e
 
-DEVICE=OP4A7A
+DEVICE=OP4EC1
 VENDOR=oppo
 
 # Load extract_utils and do some sanity checks

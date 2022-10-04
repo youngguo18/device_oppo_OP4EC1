@@ -20,7 +20,7 @@ on boot
     chmod 0666 /sys/class/leds/vibrator/state
     chmod 0666 /sys/class/leds/vibrator/vmax
 
-service vendor.qti.vibrator.oppo_OP4A7A /vendor/bin/hw/vendor.qti.hardware.vibrator.service.oppo_OP4A7A
+service vendor.qti.vibrator.oppo_OP4EC1 /vendor/bin/hw/vendor.qti.hardware.vibrator.service.oppo_OP4EC1
     class hal
     user system
     group system input
