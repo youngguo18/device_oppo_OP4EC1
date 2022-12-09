@@ -18,12 +18,4 @@ export DEVICE=OP4EC1
 export DEVICE_COMMON=sm8250-common
 export VENDOR=oppo
 
-function blob_fixup() {
-    case "${1}" in
-        vendor/lib/libgui1_vendor.so)
-            patchelf --replace-needed "libui.so" "libui-v30.so" "${2}"
-            ;;
-    esac
-}
-
 "./../../${VENDOR}/${DEVICE_COMMON}/extract-files.sh" "$@"
