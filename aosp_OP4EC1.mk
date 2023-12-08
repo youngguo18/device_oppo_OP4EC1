@@ -26,7 +26,6 @@ TARGET_INCLUDE_PIXEL_CHARGER := true
 TARGET_SUPPORTS_QUICK_TAP := true
 TARGET_SUPPORTS_GOOGLE_RECORDER := true
 EXTRA_UDFPS_ANIMATIONS := true
-TARGET_EXCLUDES_AUDIOFX := true
 
 # Inherit from device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
